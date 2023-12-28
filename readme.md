@@ -21,13 +21,17 @@ This repository contains a Python script that utilizes FFmpeg to encode video fi
     ```bash
     pip install -r requirements.txt
     ```
+    or
+    ```bash
+    pip install ffmpeg-python argparse
+    ```
 
 ### Usage
 
-Run the script `video_encoder.py` with the following command:
+Run the script:
 
 ```bash
-python video_encoder.py <file_path>
+python main.py <file_path>
 ```
 
 Replace `<file_path>` with the path to the video file you want to encode.
@@ -36,10 +40,9 @@ Replace `<file_path>` with the path to the video file you want to encode.
 
 #### Dependencies
 
-- `os`: Operating system functionalities.
 - `argparse`: Parsing command-line arguments.
 - `time`: Handling time-related operations.
-- `ffmpeg`: Python FFmpeg bindings.
+- `ffmpeg-python`: Python FFmpeg bindings.
 - `threading`: Managing concurrent execution using threads.
 
 #### Script Logic
@@ -69,14 +72,10 @@ Replace `<file_path>` with the path to the video file you want to encode.
 ### Example
 
 ```bash
-python video_encoder.py path/to/your/video.mp4
+python main.py path/to/your/video.mp4
 ```
 
-This command will concurrently encode the video into different resolutions (if supported) and extract its audio into an MP3 file, all within the "encoded" directory.
-
-### Acknowledgments
-
-This script leverages the powerful FFmpeg library to perform video encoding and audio extraction efficiently.
+This command will concurrently encode the video into different resolutions and extract its audio into an MP3 file, all within the "encoded" directory.
 
 ### License
 
