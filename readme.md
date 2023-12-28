@@ -13,7 +13,7 @@ This repository contains a Python script that utilizes FFmpeg to encode video fi
 
     ```bash
     git clone https://github.com/Sprechender/SSPEnc.git
-    cd repository
+    cd SSPenc
     ```
 
 2. Install required Python packages:
