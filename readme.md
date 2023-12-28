@@ -1,4 +1,4 @@
-## SSPEnc using ffmpeg (simple streaming platform enc)
+## SSPEnc using ffmpeg (simple streaming platform encoder)
 
 This repository contains a Python script that utilizes FFmpeg to encode video files into different resolutions and extract audio into an MP3 file. The tool employs multi-threading to optimize the encoding process for various resolutions concurrently.
 
